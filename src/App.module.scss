@@ -1,0 +1,27 @@
+.app {
+  width: 100%;
+  height: 100vh;
+
+  .sidebar {
+    height: 100%;
+    width: 30%;
+    padding: 2rem;
+    background-color: #404555;
+    float: left;
+  }
+  
+  .content {
+    height: 100%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .sidebar {
+    display: none;
+  }
+}

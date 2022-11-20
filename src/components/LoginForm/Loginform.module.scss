@@ -1,0 +1,112 @@
+.container {
+    padding: 1rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 24rem;
+
+    .top-icon {
+        display: none;
+    }
+
+    .title {
+        color: #121317;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 24px;
+
+        > span {
+            color: #2558E5;
+            cursor: pointer;
+        }
+    }
+
+    .forgot-password {
+        color: #2558E5;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.8;
+        line-height: 1.3rem;
+        float: right;
+        margin-bottom: 1rem;
+    }
+
+    form {
+
+        > input{
+            border: 1px solid black;
+        }
+        .error {
+            margin-top: 0.2rem;
+            color: #D92D20;
+            border-color: #D92D20;
+        }
+
+        .input-box {
+            font-size: 1rem;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .button {
+            width: 100%;
+            cursor: pointer;
+            padding: 1rem;
+            background-color: #F1C12B;
+            border-radius: 4px;
+            font-weight: 700;
+            color: #121317;
+            border: none;
+    }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        .top-icon {   
+            display: block;
+            margin: auto;       
+            margin-bottom: 2rem;  
+        }
+
+        .title {
+            font-size: 1.3rem;
+            line-height: 1.75rem;
+        }
+
+        .input-box {
+            padding: 0.5rem;
+        }
+
+        .forgot-password {
+            font-size: 0.75rem;
+            transform: perspective(1px);
+        }
+
+        form {
+            height: calc(100% - 7rem);
+            position: relative;
+
+            .error {
+                font-size: 0.75rem;
+            }
+
+            .button {
+                padding: 0.5rem;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }        
+    }
+  }

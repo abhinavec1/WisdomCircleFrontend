@@ -1,0 +1,5 @@
+export const INVALIDEMAIL = 'Please enter a valid email address'
+export const INVALIDPHONE = 'Please enter a valid mobile number'
+export const UNREGISTEREDEMAIL = 'Sorry! This email is not registered'
+export const UNREGISTEREDPHONE = 'Sorry! This mobile number is not registered.'
+export const WRONGPASSWORD = 'Sorry! Password entered is incorrect'
